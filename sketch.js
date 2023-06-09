@@ -6,6 +6,8 @@
 *    Availability: https://codepen.io/miroleon/pen/LYgENVZ
 *
 ***************************************************************************************/
+
+//variables
 let eight;
 let t;
 let x;
@@ -33,7 +35,7 @@ function setup() {
 function draw() {
   background(17, 21, 28);
   strokeWeight(2);
-
+//animation fro visual
   let map3 = map(pos, 1, 100, 0.5, 1.5, true);
   let disin1 = map(sin(t), 0, 100, 0.1, 75, true);
 
@@ -78,7 +80,7 @@ function draw() {
   t += 0.0025;
 
   if (frameCount % 60 == 0 && timer > 0) {
-    // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
+   
     timer--;
   }
   //  console.log(timer);
@@ -93,7 +95,7 @@ function draw() {
     button.position(425, height/2);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
-        "https://editor.p5js.org/natashatan/sketches/gxSMDJpDT";
+        "https://tashatan1.github.io/let-s-breath/";
     });
   }
 }
@@ -102,7 +104,7 @@ function mouseWheel(event) {
   print(event.delta);
   pos += event.delta * 0.1;
 }
-
+//animation for visual
 function initializeFields() {
   t = 0;
   x = 0;
