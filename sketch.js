@@ -92,7 +92,7 @@ function draw() {
         "https://tashatan1.github.io/visual-eight/";
     });
     button = createButton("Let's Breath");
-    button.position((width/2) -80, height/2);
+    button.position((width/2) +80, height/2);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
         "https://tashatan1.github.io/let-s-breath/";
